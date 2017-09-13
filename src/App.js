@@ -47,7 +47,7 @@ class App extends Component {
   render() {
     return (
       <div className="my_app">
-        <Items />
+        <Items items={this.state.items}/>
         <List />
         <Total />
       </div>
