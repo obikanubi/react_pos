@@ -12,7 +12,6 @@ class App extends Component {
         <Items />
         <List />
         <Total />
-        <p>Test</p>
       </div>
     );
   }
