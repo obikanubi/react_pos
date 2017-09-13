@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
 }
@@ -8,6 +9,24 @@ body {
 .box {
   height: 200px;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 70px;
   border: 1px solid black;;
+}
+
+.box:hover {
+  background-color: #C4C4C4;
+}
+
+.box:active {
+  background-color: green;
+}
+.app-items {
+  margin-top: 20px;
+}
+
+.app-list {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
 }

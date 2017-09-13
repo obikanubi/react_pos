@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 
 class List extends Component {
+  constructor() {
+    super();
+    this.state = {
+      list: []
+    }
+  }
+  
   render() {
     return (
       <div className="app-list">
-        <p> items list here </p>
+        <div className="row">
+        </div>
       </div>
     );
   }

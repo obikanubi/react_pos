@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Item from './item';
+
 class Items extends Component {
   render() {
     let items;
     if(this.props.items) {
       items = this.props.items.map(item => {
         return (
-          <Item item={item}/>
+          <Item key={item.id} item={item}/>
         );
       });
     }

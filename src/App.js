@@ -17,33 +17,33 @@ class App extends Component {
     this.setState(
       {items: [
       {
-        id: "1111",
-        name: "Item 1",
+        id: "0001",
+        name: "Milk",
         price: 100
       },
       {
-        id: "2222",
-        name: "Item 2",
+        id: "0002",
+        name: "Bread",
         price: 200
       },
       {
-        id: "3333",
-        name: "Item 3",
+        id: "0003",
+        name: "Butter",
         price: 300
       },
       {
-        id: "4444",
-        name: "Item 4",
+        id: "0004",
+        name: "Cheese",
         price: 400
       },
       {
-        id: "5555",
-        name: "Item 5",
+        id: "0005",
+        name: "Bacon",
         price: 500
         },
       {
-        id: "6666",
-        name: "Item 6",
+        id: "0006",
+        name: "Cake",
         price: 600
       }
     ]});
