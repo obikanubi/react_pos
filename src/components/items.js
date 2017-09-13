@@ -5,7 +5,28 @@ class Items extends Component {
     console.log(this.props);
     return (
       <div className="app-items">
-        <p> items on sale here </p>
+        <div className="row">
+          <div className="col-4 box">
+            1111
+          </div>
+          <div className="col-4 box">
+            2222
+          </div>
+          <div className="col-4 box">
+            3333
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-4 box">
+            4444
+          </div>
+          <div className="col-4 box">
+            5555
+          </div>
+          <div className="col-4 box">
+            6666
+          </div>
+        </div>
       </div>
     );
   }
