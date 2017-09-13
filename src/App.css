@@ -1,12 +1,13 @@
+body {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
 
 .box {
   height: 200px;
-  width: 100px;
   text-align: center;
   padding-top: 90px;
-  border: 1px solid black;
-  
+  border: 1px solid black;;
 }

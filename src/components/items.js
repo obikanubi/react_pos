@@ -1,31 +1,19 @@
 import React, { Component } from 'react';
-
+import Item from './item';
 class Items extends Component {
   render() {
-    console.log(this.props);
+    let items;
+    if(this.props.items) {
+      items = this.props.items.map(item => {
+        return (
+          <Item item={item}/>
+        );
+      });
+    }
     return (
       <div className="app-items">
         <div className="row">
-          <div className="col-4 box">
-            1111
-          </div>
-          <div className="col-4 box">
-            2222
-          </div>
-          <div className="col-4 box">
-            3333
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-4 box">
-            4444
-          </div>
-          <div className="col-4 box">
-            5555
-          </div>
-          <div className="col-4 box">
-            6666
-          </div>
+          {items}
         </div>
       </div>
     );
