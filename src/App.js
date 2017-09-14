@@ -8,9 +8,18 @@ import Total from './components/total';
 class App extends Component {
   constructor() {
     super();
+    this.getItem = this.getItem.bind(this);
+
     this.state = {
-      items: []
+      items: [],
+      cart: []
     }
+  }
+
+  getItem(order) {
+    this.setState({
+      cart: this.state.cart.concat(order)
+    })
   }
 
   componentWillMount() {
@@ -19,31 +28,37 @@ class App extends Component {
       {
         id: "0001",
         name: "Milk",
+        quantity: 1,
         price: 100
       },
       {
         id: "0002",
         name: "Bread",
+        quantity: 1,
         price: 200
       },
       {
         id: "0003",
         name: "Butter",
+        quantity: 1,
         price: 300
       },
       {
         id: "0004",
         name: "Cheese",
+        quantity: 1,
         price: 400
       },
       {
         id: "0005",
         name: "Bacon",
+        quantity: 1,
         price: 500
-        },
+      },
       {
         id: "0006",
         name: "Cake",
+        quantity: 1,
         price: 600
       }
     ]});
@@ -51,8 +66,8 @@ class App extends Component {
   render() {
     return (
       <div className="my_app">
-        <Items items={this.state.items}/>
-        <List />
+        <Items items={this.state.items} handleGetItem={this.getItem}/>
+        <List items={this.state.cart} handleGetItem={this.getItem}/>
         <Total />
       </div>
     );

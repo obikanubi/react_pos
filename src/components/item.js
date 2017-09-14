@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
 class Item extends Component {
-  constructor() {
-    super();
-    this.state = {
-      list: []
-    }
-  }
-
   placeOrder() {
-    alert(this.props.item.name);
+    let order = {
+      id: this.props.item.id,
+      name: this.props.item.name,
+      quantity: this.props.item.quantity,
+      price: this.props.item.price
+    }
+    this.props.handleSetItem(order)
   };
 
   render() {
