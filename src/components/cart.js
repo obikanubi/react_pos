@@ -10,9 +10,13 @@ class Cart extends Component {
     }
     console.log(this.props.handleSendItem(order))
   }
+  delete() {
+    console.log('clicked');
+  }
   render() {
     return (
         <div className="app-order">
+          <button className="btn-danger" onClick={this.delete.bind(this)}>X</button>
           <strong>Order: </strong>{this.props.order.name}
           <strong>Quantity: </strong> <button onClick={this.quantityUp.bind(this)}>{this.props.order.quantity}</button>
           <strong>Price: </strong>{this.props.order.price}

@@ -5,7 +5,8 @@ class Total extends Component {
     return (
       <div className="row">
         <div className="app-total">
-          <p> Total here </p>
+          <br />
+          <button className="btn btn-success">Total</button>
         </div>
       </div>
     );
