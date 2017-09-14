@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cart from './cart';
 
 class List extends Component {
 
@@ -6,7 +7,7 @@ class List extends Component {
     return (
       <div className="row">
         <div className="app-list">
-          {this.props.name}, {this.props.price}
+          <Cart />
         </div>
       </div>
     );

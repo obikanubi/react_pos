@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import List from './list';
+import Cart from './cart';
 
 class Item extends Component {
   constructor() {
@@ -11,7 +11,7 @@ class Item extends Component {
 
   placeOrder() {
     return (
-      <List key={this.props.item.id} name={this.props.item.name} price={this.props.item.price}/>
+      <Cart key={this.props.item.id} name={this.props.item.name} price={this.props.item.price}/>
     )
   };
 
