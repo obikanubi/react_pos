@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Cart from './cart';
 
 class Item extends Component {
   constructor() {
@@ -10,9 +9,7 @@ class Item extends Component {
   }
 
   placeOrder() {
-    return (
-      <Cart key={this.props.item.id} name={this.props.item.name} price={this.props.item.price}/>
-    )
+    alert(this.props.item.name);
   };
 
   render() {
