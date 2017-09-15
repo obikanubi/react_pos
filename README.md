@@ -22,7 +22,31 @@ npm start
 ### Install necessary tech
 1. [Node.js](https://nodejs.org/en/download/)
 2. [create-react-app](https://facebook.github.io/react/docs/installation.html)
+3. [Github](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
+### Initiating git
+Git is a version control tool enabling developers to save their progress and revert back to a working development state in case of bugs.
+create a local repository by:
+```sh
+git init
+```
+add new and modified files to the staging area:
+```sh
+git add .
+```
+commit changes to local repository
+```sh
+git commit -m 'include details on your commit'
+```
+view commit logs
+```sh
+git log --oneline
+```
+reset to a working development state in case of bugs
+```sh
+git reset ssh --hard 'SHA'
+```
+SHA is the numbered key generated during commits. use git log --oneline and copy the SHA of your last bug-free commit.
 ### Bootstrap
 1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
 ```sh
