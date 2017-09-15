@@ -17,3 +17,87 @@ npm install
 npm start
 ```
 5. Open localhost:3000 in your browser
+
+## Building the app
+### Install necessary tech
+1. [Node.js](https://nodejs.org/en/download/)
+2. [create-react-app](https://facebook.github.io/react/docs/installation.html)
+
+### Bootsratp
+1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
+```sh
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+```
+2. Open App.css (./src/App.css) and paste this over the existing css
+```sh
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.box {
+  height: 200px;
+  text-align: center;
+  padding-top: 50px;
+  border: 1px solid green;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.box:hover {
+  background-color: #C4C4C4;
+}
+
+.box:active {
+  background-color: green;
+}
+.app-items {
+  margin-top: 20px;
+}
+
+.app-order {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+.app-order strong {
+  padding-left: 50px;
+}
+#total {
+  margin-left: 30px;
+}
+@media (max-width: 770px){
+  .app-order strong {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 440px) {
+  .app-order strong {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 390px){
+  .box {
+    font-size: 15px;
+    height: 100px;
+    padding-top: 20px;
+  }
+  .app-order {
+    text-align: center;
+    font-size: 15px;
+  }
+  .app-order strong {
+    padding-left: 5px;
+  }
+
+}
+```
