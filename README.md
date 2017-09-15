@@ -26,7 +26,7 @@ npm start
 
 ### Initiating git
 Git is a version control tool enabling developers to save their progress and revert back to a working development state in case of bugs.
-create a local repository by:
+create a local repository by typing this to your terminal window:
 ```sh
 git init
 ```
@@ -47,6 +47,8 @@ reset to a working development state in case of bugs
 git reset --hard 'SHA'
 ```
 SHA is the numbered key generated during commits. use git log --oneline and copy the SHA of your last bug-free commit.
+
+Learn more about [git](https://git-scm.com/documentation)
 
 ### Bootstrap
 1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
