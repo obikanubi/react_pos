@@ -39,6 +39,9 @@ body {
 .app-order strong {
   padding-left: 50px;
 }
+#total {
+  margin-left: 30px;
+}
 @media (max-width: 770px){
   .app-order strong {
     padding-left: 50px;

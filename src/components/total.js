@@ -9,7 +9,7 @@ class Total extends Component {
       <div className="row">
         <div className="app-total">
           <br />
-          <button className="btn btn-success" onClick={this.total.bind(this)}>Total</button> <strong>Php {this.props.total}</strong>
+          <button className="btn btn-success" onClick={this.total.bind(this)}>Place order</button> <strong id="total">Php {this.props.total}</strong>
         </div>
       </div>
     );
