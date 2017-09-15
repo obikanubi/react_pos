@@ -44,9 +44,10 @@ git log --oneline
 ```
 reset to a working development state in case of bugs
 ```sh
-git reset ssh --hard 'SHA'
+git reset --hard 'SHA'
 ```
 SHA is the numbered key generated during commits. use git log --oneline and copy the SHA of your last bug-free commit.
+
 ### Bootstrap
 1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
 ```sh
