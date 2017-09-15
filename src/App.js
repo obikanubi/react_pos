@@ -12,7 +12,8 @@ class App extends Component {
 
     this.state = {
       items: [],
-      cart: []
+      cart: [],
+      total: 0
     }
   }
 
@@ -46,6 +47,17 @@ class App extends Component {
     }
     this.setState({
       cart: orders
+    })
+  }
+
+  getTotal() {
+    let orders = this.state.cart;
+    let total = 0
+    for(var i = 0; i < orders.length; i++) {
+      total += orders[i].price
+    }
+    this.setState({
+      total: total
     })
   }
 
@@ -95,7 +107,7 @@ class App extends Component {
       <div className="my_app">
         <Items items={this.state.items} handleGetItem={this.getItem}/>
         <List items={this.state.cart} handleDeleteItem={this.deleteItem.bind(this)} handleGetItem={this.getItem}/>
-        <Total />
+        <Total total={this.state.total} handleGetTotal={this.getTotal.bind(this)}/>
       </div>
     );
   }
