@@ -8,7 +8,7 @@ class Cart extends Component {
 
   render() {
     return (
-        <div className="app-order">
+        <div className="app-order btn btn-info">
           <button className="btn-danger" onClick={this.delete.bind(this)}>X</button>
           <strong>Order: </strong>{this.props.order.name}
           <strong>Quantity: </strong>{this.props.order.quantity}

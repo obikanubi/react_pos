@@ -13,7 +13,7 @@ class Item extends Component {
 
   render() {
     return (
-        <div className="col-4 box" onClick={this.placeOrder.bind(this)}>
+        <div className="col-4 box btn btn-secondary" onClick={this.placeOrder.bind(this)}>
           <strong>{this.props.item.name}</strong> <br />
           {this.props.item.price}
         </div>
