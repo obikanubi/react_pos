@@ -158,3 +158,11 @@ class 'Component Name' extends Component {
 
 export default 'Component Name';
 ```
+
+### Creating objects inside a State
+### Creating clickable items list
+### Passing props
+### Adding items to Cart
+### Deleting items in Cart
+### Updating items in Cart
+### Getting total
