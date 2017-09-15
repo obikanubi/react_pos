@@ -6,12 +6,16 @@ class List extends Component {
     this.props.handleGetItem(order);
   }
 
+  passDelete(order) {
+    this.props.handleDeleteItem(order);
+  }
+
   render() {
     let cart;
     if (this.props.items) {
       cart = this.props.items.map(order => {
         return (
-          <Cart key={order.id} order={order} handleSendItem={this.sendItem.bind(this)}/>
+          <Cart key={order.id} order={order} handleDelete={this.passDelete.bind(this)} handleSendItem={this.sendItem.bind(this)}/>
         )
       });
     }

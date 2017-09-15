@@ -10,9 +10,12 @@ class Cart extends Component {
     }
     console.log(this.props.handleSendItem(order))
   }
+
   delete() {
-    console.log('clicked');
+    let order = this.props.order
+    this.props.handleDelete(order);
   }
+
   render() {
     return (
         <div className="app-order">

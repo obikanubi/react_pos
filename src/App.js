@@ -22,6 +22,19 @@ class App extends Component {
     })
   }
 
+  deleteItem(order) {
+    let orders = this.state.cart;
+
+    for(var i = 0; i < orders.length; i++){
+      if(orders[i].id === order.id){
+        orders.splice(i, 1);
+      }
+    }
+    this.setState({
+      cart: orders
+    })
+  }
+
   componentWillMount() {
     this.setState(
       {items: [
@@ -67,7 +80,7 @@ class App extends Component {
     return (
       <div className="my_app">
         <Items items={this.state.items} handleGetItem={this.getItem}/>
-        <List items={this.state.cart} handleGetItem={this.getItem}/>
+        <List items={this.state.cart} handleDeleteItem={this.deleteItem.bind(this)} handleGetItem={this.getItem}/>
         <Total />
       </div>
     );
