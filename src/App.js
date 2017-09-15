@@ -17,6 +17,20 @@ class App extends Component {
   }
 
   getItem(order) {
+    let orders = this.state.cart;
+    let x = this.state.items
+    for(var i = 0; i < orders.length; i++){
+      if(orders[i].id === order.id){
+        order = orders[i];
+        orders.splice(i, 1);
+        order = {
+          id: order.id,
+          name: order.name,
+          quantity: order.quantity += 1,
+          price: x[i].price * order.quantity
+        }
+      }
+    }
     this.setState({
       cart: this.state.cart.concat(order)
     })
