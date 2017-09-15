@@ -48,7 +48,7 @@ git reset --hard 'SHA'
 ```
 SHA is the numbered key generated during commits. use git log --oneline and copy the SHA of your last bug-free commit.
 
-Learn more about [git](https://git-scm.com/documentation)
+Learn more about [git](https://git-scm.com/documentation): git pull vs git fetch, creating branches, soft resets vs hard resets, unstaging files from staging area, adding remote repository, adding a forked repository, detached HEAD state, and more.
 
 ### Bootstrap
 1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
