@@ -24,7 +24,7 @@ npm start
 2. [create-react-app](https://facebook.github.io/react/docs/installation.html)
 3. [Github](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Initiating git
+### Initializing git
 Git is a version control tool enabling developers to save their progress and revert back to a working development state in case of bugs.
 create a local repository by typing this to your terminal window:
 ```sh
@@ -138,7 +138,7 @@ body {
     import List from './components/list';
     import Total from './components/total';
 ```
-2. (optional) Create components folder inside the src folder and create the following files:
+2. (optional) Create 'components' directory inside the 'src' directory and create the following files:
 
 ```sh
 item.js
