@@ -106,13 +106,28 @@ body {
 ```sh
   import React, { Component } from 'react';
   import './App.css';
-  import Items from './components/items';
-  import List from './components/list';
-  import Total from './components/total';
+  (optional)
+    import Items from './components/items';
+    import List from './components/list';
+    import Total from './components/total';
 ```
-2. Create components folder inside the src folder and create the following files:
+2. (optional) Create components folder inside the src folder and create the following files:
 
 ```sh
-cart.js
+item.js
+list.js
+total.js
+```
+You can also create components inside the App.js if you wish to do so.
 
+3. React components can be created with this syntax:
+```sh
+import React, { Component } from 'react';
+class 'Component Name' extends Component {
+  render() {
+    return()
+  }
+}
+
+export default 'Component Name';
 ```
