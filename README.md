@@ -23,7 +23,7 @@ npm start
 1. [Node.js](https://nodejs.org/en/download/)
 2. [create-react-app](https://facebook.github.io/react/docs/installation.html)
 
-### Bootsratp
+### Bootstrap
 1. Include Bootstrap 4 cdn inside index.html head tag. (./public/index.html)
 ```sh
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -98,6 +98,21 @@ body {
   .app-order strong {
     padding-left: 5px;
   }
-
 }
+```
+### Creating and importing components
+
+1. Open App.js (./src/App.js) and import the following:
+```sh
+  import React, { Component } from 'react';
+  import './App.css';
+  import Items from './components/items';
+  import List from './components/list';
+  import Total from './components/total';
+```
+2. Create components folder inside the src folder and create the following files:
+
+```sh
+cart.js
+
 ```
